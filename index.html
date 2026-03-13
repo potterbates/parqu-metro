@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parquimetro</title>
+</head>
+
+<body>
+    <div>
+        <h1>Parquímetro Digital</h1>
+        <p>Insira um valor em Reais (R$) para calcular seu tempo de permanência</p>
+
+        <div>
+            <h2>Tabela de Preços</h2>
+            <ul>
+                <li><strong>R$ 1,00</strong> - 30 minutos</li>
+                <li><strong>R$ 1,75</strong> - 60 minutos</li>
+                <li><strong>R$ 3,00</strong> - 120 minutos</li>
+            </ul>
+        </div>
+
+        <div>
+            <label for="valorInput">Valor Inserido (R$):</label>
+            <input type="number" id="valorInput" placeholder="Ex: 3,00" step="0.01" min="0">
+        </div>
+
+        <button id="calcularBtn">Calcular Tempo</button>
+
+        <div id="resultadoDiv">
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
