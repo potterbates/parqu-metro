@@ -15,7 +15,7 @@ class Parquimetro {
         }
 
         let tempoCorrespondente = 0;
-        let custoDoTempo = 0;
+        let custoDoTempo = 0; // Custo do tempo correspondente ao valor inserido
 
         for (let i = this.tabelaPrecos.length - 1; i >= 0; i--) {
             const faixa = this.tabelaPrecos[i]
@@ -23,6 +23,7 @@ class Parquimetro {
 
             if (valorInserido >= faixa.valor) {
                 tempoCorrespondente = faixa.tempo;
+                custoDoTempo = faixa.valor;
                 break;
             }
         }
